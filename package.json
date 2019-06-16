@@ -1,0 +1,23 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "friend finder app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MRMetrailer/FriendFinder.git"
+  },
+  "author": "Matthew Metrailer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MRMetrailer/FriendFinder/issues"
+  },
+  "homepage": "https://github.com/MRMetrailer/FriendFinder#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
