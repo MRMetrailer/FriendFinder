@@ -19,4 +19,4 @@ From the homepage the user can click on the "Survey" button to begin the survey.
 
 ## Link
 
-Click on the link to try out [FriendFinder]().
+Click on the link to try out [FriendFinder](https://salty-wildwood-75979.herokuapp.com).
