@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Friend Finder Survey</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div class="jumbotron">
+			<h1>Survey Questions</h1><br>
+			<hr>
+			<form method="POST" action="/api/friends">
+				<h3><strong>About You</strong></h3>
+				<fieldset class="form-group">
+					<label for="name">Name (Required)</label>
+					<input type="text" class="form-control" placeholder="Your Name" id="name" name="name" required>
+				</fieldset>
+				<fieldset class="form-group">
+					<label for="photo">Link to Photo (Required)</label>
+					<input type="text" class="form-control" placeholder="http://yourpicture.jpg" id="photo" name="photo"
+						required>
+				</fieldset>
+				<hr>
+				<h4><strong>Question 1</strong></h4>
+				<fieldset class="form-group">
+					<label for="question01">Sleeping 8 hours every night is very important.</label>
+					<br>
+					<div class="col-md-4">
+						<select class="form-control" id="question01" name="scores[0]">
+							<option>1 (Strongly Disagree)</option>
+							<option>2 (Somewhat Disagree)</option>
+							<option>3 (Neutral)</option>
+							<option>4 (Somewhat Agree)</option>
+							<option>5 (Strongly Agree)</option>
+						</select>
+					</div>
+				</fieldset>
+				<h4><strong>Question 2</strong></h4>
+				<fieldset class="form-group">
+					<label for="question02">I would rather watch a movie than read a book.</label>
+					<br>
+					<div class="col-md-4">
+						<select class="form-control" id="question02" name="scores[1]">
+							<option>1 (Strongly Disagree)</option>
+							<option>2 (Somewhat Disagree)</option>
+							<option>3 (Neutral)</option>
+							<option>4 (Somewhat Agree)</option>
+							<option>5 (Strongly Agree)</option>
+						</select>
+					</div>
+				</fieldset>
+				<h4><strong>Question 3</strong></h4>
+				<fieldset class="form-group">
+					<label for="question03">Bluegrass is my favorite kind of music.</label>
+					<br>
+					<div class="col-md-4">
+						<select class="form-control" id="question03" name="scores[2]">
+							<option>1 (Strongly Disagree)</option>
+							<option>2 (Somewhat Disagree)</option>
+							<option>3 (Neutral)</option>
+							<option>4 (Somewhat Agree)</option>
+							<option>5 (Strongly Agree)</option>
+						</select>
+					</div>
+				</fieldset>
+				<h4><strong>Question 4</strong></h4>
+				<fieldset class="form-group">
+					<label for="question04">I'm much better at talking compared to listening.</label>
+					<br>
+					<div class="col-md-4">
+						<select class="form-control" id="question04" name="scores[3]">
+							<option>1 (Strongly Disagree)</option>
+							<option>2 (Somewhat Disagree)</option>
+							<option>3 (Neutral)</option>
+							<option>4 (Somewhat Agree)</option>
+							<option>5 (Strongly Agree)</option>
+						</select>
+					</div>
+				</fieldset>
+				<h4><strong>Question 5</strong></h4>
+				<fieldset class="form-group">
+					<label for="question05">Weekends are for playing in the mountains.</label>
+					<br>
+					<div class="col-md-4">
+						<select class="form-control" id="question05" name="scores[4]">
+							<option>1 (Strongly Disagree)</option>
+							<option>2 (Somewhat Disagree)</option>
+							<option>3 (Neutral)</option>
+							<option>4 (Somewhat Agree)</option>
+							<option>5 (Strongly Agree)</option>
+						</select>
+					</div>
+				</fieldset>
+				<h4><strong>Question 6</strong></h4>
+				<fieldset class="form-group">
+					<label for="question06">I would own one of every type of animal if it were allowed.</label>
+					<br>
+					<div class="col-md-4">
+						<select class="form-control" id="question06" name="scores[5]">
+							<option>1 (Strongly Disagree)</option>
+							<option>2 (Somewhat Disagree)</option>
+							<option>3 (Neutral)</option>
+							<option>4 (Somewhat Agree)</option>
+							<option>5 (Strongly Agree)</option>
+						</select>
+					</div>
+				</fieldset>
+				<h4><strong>Question 7</strong></h4>
+				<fieldset class="form-group">
+					<label for="question07">One person can never own enough shoes.</label>
+					<br>
+					<div class="col-md-4">
+						<select class="form-control" id="question07" name="scores[6]">
+							<option>1 (Strongly Disagree)</option>
+							<option>2 (Somewhat Disagree)</option>
+							<option>3 (Neutral)</option>
+							<option>4 (Somewhat Agree)</option>
+							<option>5 (Strongly Agree)</option>
+						</select>
+					</div>
+				</fieldset>
+				<h4><strong>Question 8</strong></h4>
+				<fieldset class="form-group">
+					<label for="question08">It should be my choice if I want to wear a seat belt.</label>
+					<br>
+					<div class="col-md-4">
+						<select class="form-control" id="question08" name="scores[7]">
+							<option>1 (Strongly Disagree)</option>
+							<option>2 (Somewhat Disagree)</option>
+							<option>3 (Neutral)</option>
+							<option>4 (Somewhat Agree)</option>
+							<option>5 (Strongly Agree)</option>
+						</select>
+					</div>
+				</fieldset>
+				<h4><strong>Question 9</strong></h4>
+				<fieldset class="form-group">
+					<label for="question09">My drink of choice is red wine.</label>
+					<br>
+					<div class="col-md-4">
+						<select class="form-control" id="question09" name="scores[8]">
+							<option>1 (Strongly Disagree)</option>
+							<option>2 (Somewhat Disagree)</option>
+							<option>3 (Neutral)</option>
+							<option>4 (Somewhat Agree)</option>
+							<option>5 (Strongly Agree)</option>
+						</select>
+					</div>
+				</fieldset>
+				<h4><strong>Question 10</strong></h4>
+				<fieldset class="form-group">
+					<label for="question10">I spend most of my waking hours on social media.</label>
+					<br>
+					<div class="col-md-4">
+						<select class="form-control" id="question10" name="scores[9]">
+							<option>1 (Strongly Disagree)</option>
+							<option>2 (Somewhat Disagree)</option>
+							<option>3 (Neutral)</option>
+							<option>4 (Somewhat Agree)</option>
+							<option>5 (Strongly Agree)</option>
+						</select>
+					</div>
+				</fieldset><br>
+				<input type="submit" class="btn btn-primary" value="Find Friend" id="submit">
+			</form>
+		</div>
+		<hr>
+		<a href="/api/friends">API Friends List</a> | <a href="https://github.com/MRMetrailer/FriendFinder"
+			target="_blank">GitHub Repo</a>
+	</div>
+	<div id="bestFriendModal" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">X</button>
+					<h2 class="modal-title">Best Match</h2>
+				</div>
+				<div class="modal-body">
+					<h2 id="bestFriendName"></h2>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		$('#submit').on("click", function () {
+			var userInput = {
+				name: $('#name').val().trim(),
+				photo: $('#photo').val().trim(),
+				scores: [$('#question01').val().trim(), $('#question02').val().trim(), $('#question03').val().trim(), $('#question04').val().trim(), $('#question05').val().trim(), $('#question06').val().trim(), $('#question07').val().trim(), $('#question08').val().trim(), $('#question09').val().trim(), $('#question10').val().trim()]
+			}
+			var currentURL = window.location.origin;
+			$.post(currentURL + '/api/friends', userInput, function (data) {
+				$("#bestFriendName").text(data.name);
+				$("#bestFriendModal").modal("show");
+			});
+			return false;
+		});
+	</script>
+</body>
+
+</html>
